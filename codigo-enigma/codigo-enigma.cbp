@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add option="-Wall -Wextra -ansi -pedantic" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-Wall -Wextra -ansi -pedantic" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -31,9 +33,33 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="archivos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="archivos.h" />
+		<Unit filename="casosPrueba.h" />
+		<Unit filename="cesar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cesar.h" />
+		<Unit filename="codigoError.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Extensions />
+		<Unit filename="utilidades.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utilidades.h" />
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
